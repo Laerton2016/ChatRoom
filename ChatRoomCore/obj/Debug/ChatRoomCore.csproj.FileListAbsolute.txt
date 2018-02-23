@@ -1,0 +1,7 @@
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\bin\Debug\ChatRoomCore.exe.config
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\bin\Debug\ChatRoomCore.exe
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\bin\Debug\ChatRoomCore.pdb
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\obj\Debug\ChatRoomCore.csprojResolveAssemblyReference.cache
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\obj\Debug\ChatRoomCore.csproj.CoreCompileInputs.cache
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\obj\Debug\ChatRoomCore.exe
+C:\IFPB2018\Segurança\ChatRoom\ChatRoomCore\obj\Debug\ChatRoomCore.pdb
