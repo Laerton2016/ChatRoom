@@ -3,57 +3,56 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ChatRoomCore.model
 {
     /// <summary>
-    /// Classe de Usuário que partcipa de um chat 
+    /// Classe encarregada dos dados de um usuário de chat
     /// </summary>
-    public class ChatUser:  IDisposable
+    [Serializable]
+    public class ChatUser
     {
+        /// <summary>
+        /// Última atividade do usuário
+        /// </summary>
+        [XmlIgnore]
+        public DateTime LastActividade { get; set; }
         /// <summary>
         /// Id do usuário
         /// </summary>
-        public UInt32 UserId { get; set; }
+        public int UserId { get; set; }
         /// <summary>
-        /// Nome do Usuário
+        /// Nome do usuário
         /// </summary>
         public String UserName { get; set; }
+
         /// <summary>
-        /// Status de ativo do usuário
+        /// Cria um usuário do chat com os paramentros repassados
         /// </summary>
-        public bool IsActive { get; set; }
-        /// <summary>
-        /// Última vizualisação do úsuário
-        /// </summary>
-        public DateTime LastSeen { get; set; }
-        /// <summary>
-        /// Int da última mensagem recebida.
-        /// </summary>
-        public int LastMenssageRecived { get; set; }
-        /// <summary>
-        /// Controi um usuário 
-        /// </summary>
-        /// <param name="userId">Id do usuário </param>
+        /// <param name="lastActividade">Última atividade do usuário</param>
+        /// <param name="userId">Id do usuário</param>
         /// <param name="userName">Nome do usuário</param>
-        public ChatUser(UInt32 userId, string userName)
+        public ChatUser(DateTime lastActividade, int userId, string userName)
         {
-            this.UserId = userId;
-            this.IsActive = false;
-            this.LastSeen = DateTime.MinValue;
-            this.UserName = userName;
-            this.LastMenssageRecived = 0;
+            LastActividade = lastActividade;
+            UserId = userId;
+            UserName = userName;
         }
         /// <summary>
-        /// Desfaz um usuário
+        /// Cria um usuário de chat com os dados em branco
         /// </summary>
-        public void Dispose()
+        public ChatUser()
         {
-            this.UserId = 0;
-            this.IsActive = false;
-            this.LastSeen = DateTime.MinValue;
-            this.UserName = "";
-            this.LastMenssageRecived = 0;
         }
+
+        /// <summary>
+        /// E-mail do usuário
+        /// </summary>
+        public string Email { get; set; }
+        /// <summary>
+        /// Senha do usuário
+        /// </summary>
+        public string Password { get; set; }
     }
 }

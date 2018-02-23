@@ -8,6 +8,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ChartRoomWeb", "ChartRoomWeb\", "{D33E8790-3314-4AC1-AAB4-B9A4D9E9A4EE}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{2ea21f34-7524-4679-8efb-5cd697cec8f4}|ChatRoomCore.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_52002"
 		Debug.AspNetCompiler.PhysicalPath = "ChartRoomWeb\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52002\"
