@@ -6,6 +6,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using ChatRoomCore.Data;
 using  ChatRoomCore.model;
 
 namespace ChatRoomWeb
@@ -128,7 +129,7 @@ namespace ChatRoomWeb
             if (LastMassageId == null)
             {
                 ChatDataAccess da = new ChatDataAccess();
-                LastMassageId = da.GetLastMenssage();
+                LastMassageId = da.GetLastMessage();
             }
 
             return (int) LastMassageId;
