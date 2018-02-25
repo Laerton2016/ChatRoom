@@ -18,13 +18,13 @@
             <div class="avatar">
                 <img  src="/img/avatar.png"/>
             </div>
-            <input type="text" placeholder="username" required runat="server"/>
+            <input id="login" name="login" type="text" placeholder="username" required runat="server"/>
             <div class="bar">
                 <i></i>
             </div>
-            <input type="password" placeholder="password" required runat="server"/>
+            <input id="password" name="password" type="password" placeholder="password" required runat="server"/>
             <a href="" class="forgot_link">esqueceu ?</a>
-            <button>Sign in</button>
+            <asp:Button CssClass="Button"  runat="server" OnClick="OnClick" Text="Entrar"/>
         </div>
 
         
