@@ -1,0 +1,11 @@
+C:\Users\laerton\ifpb\SRChat\bin\SRChat.dll.config
+C:\Users\laerton\ifpb\SRChat\bin\SRChat.dll
+C:\Users\laerton\ifpb\SRChat\bin\SRChat.pdb
+C:\Users\laerton\ifpb\SRChat\bin\Newtonsoft.Json.dll
+C:\Users\laerton\ifpb\SRChat\bin\SignalR.dll
+C:\Users\laerton\ifpb\SRChat\bin\SignalR.Hosting.AspNet.dll
+C:\Users\laerton\ifpb\SRChat\bin\SignalR.Hosting.Common.dll
+C:\Users\laerton\ifpb\SRChat\obj\Debug\SRChat.csprojResolveAssemblyReference.cache
+C:\Users\laerton\ifpb\SRChat\obj\Debug\SRChat.csproj.CoreCompileInputs.cache
+C:\Users\laerton\ifpb\SRChat\obj\Debug\SRChat.dll
+C:\Users\laerton\ifpb\SRChat\obj\Debug\SRChat.pdb
