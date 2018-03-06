@@ -10,7 +10,7 @@
 namespace SRChat {
     
     
-    public partial class SRChatClient {
+    public partial class Default1 {
         
         /// <summary>
         /// Controle form1.
@@ -22,24 +22,21 @@ namespace SRChat {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle nomeusuario.
+        /// Controle login.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor nomeusuario;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText login;
         
         /// <summary>
-        /// Propriedade PreviousPage.
+        /// Controle password.
         /// </summary>
         /// <remarks>
-        /// Propriedade gerada automaticamente.
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        public new SRChat.Default1 PreviousPage {
-            get {
-                return ((SRChat.Default1)(base.PreviousPage));
-            }
-        }
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
     }
 }

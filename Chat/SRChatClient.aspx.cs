@@ -6,7 +6,7 @@ namespace SRChat
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            nomeusuario.InnerText = PreviousPage.Login;
         }
     }
 }

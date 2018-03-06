@@ -169,7 +169,8 @@ namespace SRChat
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException("Problem in ending chat!");
+                return false;
+                //throw new InvalidOperationException("Problem in ending chat!");
             }
         }
         public bool SendChatMessage(ChatMessage chatMessage)

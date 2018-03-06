@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
 
+
 namespace SRChat
 {
     [Serializable]
     public class ChatMessage
     {
+    
         public ChatMessage()
         {
+            
         }
 
         public string chatMessageId { get; set; }

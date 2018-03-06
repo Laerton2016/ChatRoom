@@ -20,6 +20,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -80,6 +87,13 @@
     <Compile Include="App_Code\MessageRecipient.cs" />
     <Compile Include="App_Code\OnlineContacts.cs" />
     <Compile Include="App_Code\ChatRoom.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SRChatClient.aspx.cs">
       <DependentUpon>SRChatClient.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,17 +105,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
     <Content Include="lib\Newtonsoft.Json.dll" />
     <Content Include="lib\SignalR.dll" />
     <Content Include="lib\SignalR.Hosting.AspNet.dll" />
     <Content Include="lib\SignalR.Hosting.Common.dll" />
     <Content Include="ReadMe.txt" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Styles\images\avatar.png" />
     <Content Include="Styles\images\ui-icons_222222_256x240.png" />
     <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
     <Content Include="Styles\images\ui-icons_454545_256x240.png" />
     <Content Include="Styles\images\ui-icons_888888_256x240.png" />
     <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\style.css" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +130,12 @@
     <Content Include="Scripts\jquery.dialogextend.1_0_1.js" />
     <Content Include="Scripts\jquery.signalR.js" />
     <Content Include="Scripts\jQuery.tmpl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\IFPB2018\Segurança\ChatRoom\AplicativoCriptografia\AplicativoCriptografia\AplicativoCriptografia.csproj">
+      <Project>{900dd284-26d4-4117-a213-ed74ce5911d1}</Project>
+      <Name>AplicativoCriptografia</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

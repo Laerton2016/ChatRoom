@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using SRChat;
+
 
 namespace SRChat
 {
     [Serializable]
     public class ChatRoom
     {
+        
         public string chatRoomId { get; set; }
         public string chatRoomInitiatedBy { get; set; }
         public string chatRoomInitiatedTo { get; set; }
